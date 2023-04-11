@@ -2,7 +2,7 @@ const { check } = require("express-validator");
 const usersRepo = require("../../repositories/users");
 
 module.exports = {
-   requireEmail: check("email")
+  requireEmail: check("email")
     .trim()
     .normalizeEmail()
     .isEmail()
